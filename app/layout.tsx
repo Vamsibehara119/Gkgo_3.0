@@ -33,12 +33,11 @@
 //   );
 // }
 
-
 import "./globals.css";
 
 export const metadata = {
-  title: "TheFood",
-  description: "Food Website",
+  title: "GKGO",
+  description: "GKGO Insurance Website",
 };
 
 export default function RootLayout({ children }: any) {

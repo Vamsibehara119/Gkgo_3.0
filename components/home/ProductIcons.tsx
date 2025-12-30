@@ -28,13 +28,15 @@ export default function ProductIcons() {
       {/* Grid: 4 cols for Mobile, 5 cols for Desktop */}
       <div className="grid grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
         {products.map((p, i) => (
-          <div key={i} className="bg-white border border-gray-100 rounded-[20px] p-4 lg:p-6 shadow-sm flex flex-col items-center lg:items-start transition-all hover:shadow-md cursor-pointer">
-            <div className={`w-10 h-10 lg:w-14 lg:h-14 ${p.bg} rounded-2xl flex items-center justify-center mb-3`}>
+          <div key={i} className="bg-white border border-gray-100 rounded-[20px] p-4 lg:p-3 shadow-sm flex flex-col items-center lg:items-start transition-all hover:shadow-md cursor-pointer">
+          <div className='flex flex-col items-center lg:flex-row gap-1'>
+              <div className={`w-10 h-10 lg:w-14 lg:h-14 ${p.bg} rounded-2xl flex items-center justify-center`}>
               <p.icon className={`w-5 h-5 lg:w-7 lg:h-7 ${p.color}`} strokeWidth={2.5} />
             </div>
             <span className="text-[10px] lg:text-[15px] font-bold text-gray-900 text-center lg:text-left leading-tight">
-              {p.name} <span className="hidden lg:inline">Insurance</span>
+              {p.name} <span className="hidden md:inline">Insurance</span>
             </span>
+          </div>
             <p className="hidden lg:block text-[11px] text-gray-400 mt-2 leading-relaxed">
               {p.desc}
             </p>
