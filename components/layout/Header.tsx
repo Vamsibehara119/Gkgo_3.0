@@ -7,7 +7,7 @@ export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-zinc-100 sticky top-0 z-50">
+    <header className="bg-white border-b border-zinc-100 sticky top-0 z-50 ">
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
