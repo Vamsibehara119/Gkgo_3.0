@@ -20,8 +20,9 @@ export default function Header() {
 
         {/* Desktop Navigation - Exact match to Image 1 */}
         <nav className="hidden lg:flex items-center gap-2">
-          {['Home','Products', 'Payments', 'Claims', 'Settings', 'Log Out'].map((item) => (
-            <a key={item} href="#" className="text-white-500 px-4 rounded-lg py-2 font-bold text-sm hover:bg-gk-red">{item}</a>
+          <a href="#" className="bg-gk-red text-white px-6 py-2.5 rounded-lg font-bold text-sm">Home</a>
+          {['Products', 'Payments', 'Claims', 'Settings', 'Log Out'].map((item) => (
+            <a key={item} href="#" className="text-zinc-500 px-4 py-2 font-bold text-sm hover:text-zinc-900">{item}</a>
           ))}
         </nav>
 
